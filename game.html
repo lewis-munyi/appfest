@@ -77,14 +77,15 @@
                     
 
   <form>
-        <h2>Question {{1}}</h2>
-        <h3>What is the first day of the month?</h3>
+        
+        <h5>Question {{1}}</h5  >
+            <p class="flow-text">What is the first day of the month?</p>
         <p>
-          <input name="group1" type="radio" id="option1" />
+          <input class="with-gap" name="group1" type="radio" id="option1" />
           <label for="option1">January</label>
         </p>
         <p>
-          <input name="group1" type="radio" id="option2" />
+          <input class="with-gap" name="group1" type="radio" id="option2" />
           <label for="option2">February</label>
         </p>
         <p>
@@ -92,38 +93,23 @@
           <label for="option3">March</label>
         </p>
         <p>
-          <input name="group1" type="radio" id="option4" />
+          <input class="with-gap" name="group1" type="radio" id="option4"  />
           <label for="option4">April</label>
         </p>
       </form>
+      <br> Right/wrong answer. The correct answer is{{answer}}
             
                     <div class="card-action center">
-                        <div id="firebaseui-auth-container"></div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                    <i class="material-icons right">send</i>
+                                  </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <h2>High score {{Insert high score here}}</h2>
-    <br>
-    <br>
-    <h2>Question {{Insert question number here}}</h2>
-    <h3>What is the first day of the month?</h3>
-    <form action="">
-        <input type="radio" value="1">January
-        <br>
-        <input type="radio" value="2">Feb
-        <br>
-        <input type="radio" value="3">March
-        <br>
-        <input type="radio" value="4">April
-        <br>
-        <br>
-        <button>Submit</button>
-        <br>
-        <br> Right/wrong answer. The correct an swer is{{Dispaly Valure of answer}}
-    </form>
+    
+        
 </body>
 
 </html>
