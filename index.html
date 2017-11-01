@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home page</title>
+    <title>Answer Questions</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.css" />
+    <script src="src/app.js"></script>
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <h1>App title on nav bar</h1>
-    <br>
-    <h2>High score {{Insert high score here}}</h2>
-    <br>
-    <br>
-    <h2>Question {{Insert question number here}}</h2>
-    <h3>What is the first day of the month?</h3>
-    <form action="">
-        <input type="radio" value = "1">January <br>
-        <input type="radio" value = "2">Feb <br>
-        <input type="radio" value = "3">March <br>
-        <input type="radio" value = "4">April <br> <br>
-        <button>Submit</button> <br><br>
-        Right/wrong answer. The correct answer is{{Dispaly Valure of answer}}
-    </form>
+    <!-- Dropdown Structure -->
+    <ul id="signindropdown" class="dropdown-content">
+        <li><a href="#!">Sign in/out</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#!" class="brand-logo">Logo</a>
+        </div>
+    </nav>
+    <div class="container" id="signincontainer">
+        <div class="row">
+            <div class="col s12 ">
+                <div class="card pink darken-1 center">
+                    <div class="card-content white-text center">
+                        <span class="card-title">Sign In</span>
+                        <p>Hey there. Nice to see you. To continue please sign in to your account</p>
+                    </div>
+                    <div class="card-action center">
+                        <div id="firebaseui-auth-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
 </body>
+
 </html>
