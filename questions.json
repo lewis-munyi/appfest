@@ -1,0 +1,59 @@
+{
+    "questions": {
+        "one": {
+            "question": "Which one is a modern form of communtication",
+            "answer": "2",
+            "options": {
+                "1": "Smoke signals",
+                "2": "Whatsapp",
+                "3": "Beating drums",
+                "4": "Sending Messengers"
+            },
+            "points": 2
+        },
+        "two": {
+            "question": "Which one is a modern form of communtication",
+            "answer": "2",
+            "options": {
+                "1": "Smoke signals",
+                "2": "Whatsapp",
+                "3": "Beating drums",
+                "4": "Sending Messengers"
+            },
+            "points": 4
+        },
+        "three": {
+            "question": "Which one is a modern form of communtication",
+            "answer": "2",
+            "options": {
+                "1": "Smoke signals",
+                "2": "Whatsapp",
+                "3": "Beating drums",
+                "4": "Sending Messengers"
+            },
+            "points": 6
+        },
+        "four": {
+            "question": "Which one is a modern form of communtication",
+            "answer": "2",
+            "options": {
+                "1": "Smoke signals",
+                "2": "Whatsapp",
+                "3": "Beating drums",
+                "4": "Sending Messengers"
+            },
+            "points": 8
+        },
+        "five": {
+            "question": "Which one is a modern form of communtication",
+            "answer": "2",
+            "options": {
+                "1": "Smoke signals",
+                "2": "Whatsapp",
+                "3": "Beating drums",
+                "4": "Sending Messengers"
+            },
+            "points": 10
+        }
+    }
+}

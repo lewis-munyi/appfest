@@ -28,7 +28,6 @@ initApp = function() {
             var uid = user.uid;
             var phoneNumber = user.phoneNumber;
             var providerData = user.providerData;
-
             $("#signincontainer").hide(); //Hide sign in container
             $("#gamecontainer").show(); //Hide sign in container
             $("#userimage").attr("src", photoURL); //Show user dp
@@ -37,22 +36,8 @@ initApp = function() {
             console.log(emailVerified); //true
             console.log(uid);
             console.log("Hello!");
-            // user.getIdToken().then(function(accessToken) {
-            //   document.getElementById('sign-in-status').textContent = 'Signed in';
-            //   document.getElementById('sign-in').textContent = 'Sign out';
-            //   document.getElementById('account-details').textContent = JSON.stringify({
-            //     displayName: displayName,
-            //     email: email,
-            //     emailVerified: emailVerified,
-            //     phoneNumber: phoneNumber,
-            //     photoURL: photoURL,
-            //     uid: uid,
-            //     accessToken: accessToken,
-            //     providerData: providerData
-            //   }, null, '  ');
-            // });
-
-        } else {
+        } 
+        else {
             // User is signed out.
             $("#gamecontainer").hide(); //Hide sign in container
             $("#signincontainer").show(); //Hide sign in container
