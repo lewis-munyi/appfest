@@ -36,7 +36,10 @@
     </ul>
     <nav>
         <div class="nav-wrapper blue">
-            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#!" class="brand-logo">Appfest</a>
+            <ul class="right">
+                <i id="iconsignout" onclick="signout()" class="material-icons tooltipped" data-position="left" data-tooltip="Log out">exit_to_app</i>
+            </ul>
         </div>
     </nav>
     <!-- Sign in container -->
@@ -65,13 +68,13 @@
                 <div class="card pink darken-1 center">
                     <div class="card-content white-text center">
                         <span class="card-title">
-                            <img class="responsive-img circle" src="http://materializecss.com/images/yuna.jpg">
+                            <img id="userimage" class="responsive-img circle" style="max-width: 40%;" src="">
                         </span>
-                        <p>Here's where you left off</p>
+                        <p id="username" ></p>
                     </div>
 
                     <div class="divider"></div>
-                    Current score: 76 points
+                    <p>Current score: 76 points</p>
 
 
 
