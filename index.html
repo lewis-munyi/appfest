@@ -20,6 +20,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-database.js"></script>
     <script src="src/app.js"></script>
     <script src="src/script.js"></script>
 </head>
@@ -33,7 +34,7 @@
     </ul>
     <nav>
         <div class="nav-wrapper blue">
-            <a href="#!" class="brand-logo">Appfest</a>
+            <a href="#!" class="brand-logo center">Appfest</a>
             <ul class="right">
                 <i id="iconsignout" onclick="signout()" class="material-icons tooltipped" data-position="left" data-tooltip="Log out">exit_to_app</i>
             </ul>
@@ -50,8 +51,6 @@
                     </div>
                     <div class="card-action center">
                         <div id="firebaseui-auth-container"></div>
-                        <button name="google" id="google" onclick="signin()">Sign in</button>
-                        <button name="google" id="exit" onclick="signout()">Sign out</button>
                     </div>
                 </div>
             </div>

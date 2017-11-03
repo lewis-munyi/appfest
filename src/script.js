@@ -1,21 +1,20 @@
 $("#signincontainer").hide(); //Hide sign in container
 $("#gamecontainer").hide(); //Hide sign in container
-// firebase.initializeApp(config);
-const auth = firebase.auth();
+
+const auth = firebase.auth(); // firebase.initializeApp(config);
+var database = firebase.database();
+
 // FirebaseUI config.
 var uiConfig = {
     signInSuccessUrl: '/',
     signInOptions: [
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     ],
-    // TOS url.
-    tosUrl: '<your-tos-url>'
+    tosUrl: '<your-tos-url>' // Terms Of Service url.
 };
 
-// Initialize the FirebaseUI Widget using Firebase.
-var ui = new firebaseui.auth.AuthUI(firebase.auth());
-// Wait until the DOM is loaded.
-ui.start('#firebaseui-auth-container', uiConfig);
+var ui = new firebaseui.auth.AuthUI(firebase.auth()); // Initialize the FirebaseUI Widget using Firebase.
+ui.start('#firebaseui-auth-container', uiConfig); // Wait until the DOM is loaded.
 
 initApp = function() {
     firebase.auth().onAuthStateChanged(function(user) {
@@ -32,12 +31,13 @@ initApp = function() {
             $("#gamecontainer").show(); //Hide sign in container
             $("#userimage").attr("src", photoURL); //Show user dp
             $("#username").text("Hi " + displayName + " here is where you left off"); //Append username
+            checkifuserexists(uid, displayName, email); //First check if the crrent user has registered
+            loadquestion(uid, email);
             //More tests
             console.log(emailVerified); //true
             console.log(uid);
             console.log("Hello!");
-        } 
-        else {
+        } else {
             // User is signed out.
             $("#gamecontainer").hide(); //Hide sign in container
             $("#signincontainer").show(); //Hide sign in container
@@ -47,20 +47,48 @@ initApp = function() {
     });
 };
 
-
-function signout() {
-    firebase.auth().signOut().then(function() {
-        console.log("Sign-out .");
-    }).catch(function(error) {
-        // An error happened.
+function fetchlastquestion(userid) {
+    var lastqn = firebase.database().ref('players/' + userid + '/lastquestion'); //Get last question
+    lastqn.on('value', function(snapshot) {
+        snapshot = lastquestion;
+        console.log(lastquestion); //Output its value on the screen
     });
 }
 
+function registeruser(uid, displayName, email) { //Receivee the name, id and email values as parameters
+    firebase.database().ref('players/').set({ //Write once to the user Id and child nodes
+        uid: {
+            name: displayName,
+            email: email,
+            lastquestion: 0,
+            score: 0
+        }
+    });
+    //Once complete it will (I hope) return to the main loop
+}
 
-$(document).ready(function() {
-    initApp()
+function checkifuserexists(uid, displayName, email) {
+    var userId = firebase.auth().currentUser.uid;
+    if (firebase.database().ref('/players/' + userId).once('value')) { //If their account exists then proceed to fetch the last question they answered
+        fetchlastquestion(uid);
+    } else {
+        registeruser(uid, displayName, email); //Else register them
+    }
 
-    /*Materialize*/
-    $(".button-collapse").sideNav();
-    $('.tooltipped').tooltip({ delay: 50 });
-});
+    function signout() {
+        firebase.auth().signOut().then(function() {
+            console.log("Sign-out .");
+        }).catch(function(error) {
+            // An error happened.
+        });
+    }
+    $(document).ready(function() {
+        initApp()
+
+        /*Materialize*/
+        $(".button-collapse").sideNav();
+        $('.tooltipped').tooltip({
+            delay: 50
+        });
+    })
+};
