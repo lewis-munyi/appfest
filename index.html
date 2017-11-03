@@ -14,23 +14,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+    <!-- Firebase -->
     <script src="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.4.1/firebaseui.css" />
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase-auth.js"></script>
     <script src="src/app.js"></script>
     <script src="src/script.js"></script>
+
+
 </head>
 
 <body>
     <!-- Dropdown Structure -->
     <ul id="signindropdown" class="dropdown-content">
-        <li><a href="#!">Sign in/out</a></li>
+        <li>
+            <a href="#!">Sign in/out</a>
+        </li>
     </ul>
     <nav>
         <div class="nav-wrapper blue">
             <a href="#!" class="brand-logo">Logo</a>
         </div>
     </nav>
+    <!-- Sign in container -->
     <div class="container" id="signincontainer">
         <div class="row">
             <div class="col s12 ">
@@ -41,12 +50,65 @@
                     </div>
                     <div class="card-action center">
                         <div id="firebaseui-auth-container"></div>
+                        <button name="google" id="google" onclick="signin()">Sign in</button>
+                        <button name="google" id="exit" onclick="signout()">Sign out</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div id="gamecontainer" class="container">
+
+        <div class="row">
+            <div class="col s12 ">
+                <div class="card pink darken-1 center">
+                    <div class="card-content white-text center">
+                        <span class="card-title">
+                            <img class="responsive-img circle" src="http://materializecss.com/images/yuna.jpg">
+                        </span>
+                        <p>Here's where you left off</p>
+                    </div>
+
+                    <div class="divider"></div>
+                    Current score: 76 points
+
+
+
+                    <form>
+
+                        <h5>Question {{1}}</h5>
+                        <p class="flow-text">What is the first day of the month?</p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="option1" />
+                            <label for="option1">January</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="option2" />
+                            <label for="option2">February</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="option3" />
+                            <label for="option3">March</label>
+                        </p>
+                        <p>
+                            <input class="with-gap" name="group1" type="radio" id="option4" />
+                            <label for="option4">April</label>
+                        </p>
+                    </form>
+                    <br> Right/wrong answer. The correct answer is{{answer}}
+
+                    <div class="card-action center">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+    </div>
+
 </body>
 
 </html>
