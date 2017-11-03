@@ -1,9 +1,12 @@
 {
-    "questions": {
-        "one": {
+    "questions":
+    {
+        "one":
+        {
             "question": "Which one is a modern form of communtication",
             "answer": "2",
-            "options": {
+            "options":
+            {
                 "1": "Smoke signals",
                 "2": "Whatsapp",
                 "3": "Beating drums",
@@ -11,10 +14,12 @@
             },
             "points": 2
         },
-        "two": {
+        "two":
+        {
             "question": "Which one is a modern form of communtication",
             "answer": "2",
-            "options": {
+            "options":
+            {
                 "1": "Smoke signals",
                 "2": "Whatsapp",
                 "3": "Beating drums",
@@ -22,10 +27,12 @@
             },
             "points": 4
         },
-        "three": {
+        "three":
+        {
             "question": "Which one is a modern form of communtication",
             "answer": "2",
-            "options": {
+            "options":
+            {
                 "1": "Smoke signals",
                 "2": "Whatsapp",
                 "3": "Beating drums",
@@ -33,10 +40,12 @@
             },
             "points": 6
         },
-        "four": {
+        "four":
+        {
             "question": "Which one is a modern form of communtication",
             "answer": "2",
-            "options": {
+            "options":
+            {
                 "1": "Smoke signals",
                 "2": "Whatsapp",
                 "3": "Beating drums",
@@ -44,10 +53,12 @@
             },
             "points": 8
         },
-        "five": {
+        "five":
+        {
             "question": "Which one is a modern form of communtication",
             "answer": "2",
-            "options": {
+            "options":
+            {
                 "1": "Smoke signals",
                 "2": "Whatsapp",
                 "3": "Beating drums",
@@ -55,5 +66,51 @@
             },
             "points": 10
         }
+    },
+    "players":
+    {
+        "id1":
+        {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id2":
+        {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id3":
+        {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id4":
+        {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id5":
+        {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        }
+
+    },
+    "highscore":
+    {
+        "id ": null,
+        "name": null,
+        "email": null,
+        "score": null
     }
 }
