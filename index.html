@@ -26,25 +26,18 @@
 </head>
 
 <body>
-    <!-- Dropdown Structure -->
-    <ul id="signindropdown" class="dropdown-content">
-        <li>
-            <a href="#!">Sign in/out</a>
-        </li>
-    </ul>
     <nav>
-        <div class="nav-wrapper blue">
+        <div class="nav-wrapper deep-purple darken-4">
             <a href="#!" class="brand-logo center">Appfest</a>
             <ul class="right">
                 <i id="iconsignout" onclick="signout()" class="material-icons tooltipped" data-position="left" data-tooltip="Log out">exit_to_app</i>
             </ul>
         </div>
     </nav>
-    <!-- Sign in container -->
     <div class="container" id="signincontainer">
         <div class="row">
-            <div class="col s12 ">
-                <div class="card pink darken-1 center">
+            <div class="col s12 center">
+                <div class="card-panel blue-grey darken-1 center">
                     <div class="card-content white-text center">
                         <span class="card-title">Sign In</span>
                         <p>Hey there. Nice to see you. To continue please sign in to your account</p>
@@ -56,20 +49,35 @@
             </div>
         </div>
     </div>
-    <div id="gamecontainer" class="container">
-        <div class="row">
-            <div class="col s12 ">
-                <div class="card pink darken-1 center">
-                    <div class="card-content white-text center">
-                        <span class="card-title">
-                            <img id="userimage" class="responsive-img circle" style="max-width: 40%;" src="">
-                        </span>
-                        <p id="username"></p>
+    <div class="container" id="usercontainer">
+        <div class="row white-text">
+            <div class="card-panel  blue darken-3">
+                <div class="col s4 center">
+                    <div class="container">
+                        <img id="userimage" class="responsive-img circle" src="">
                     </div>
-                    <div class="divider"></div>
-                    <p>Current score: 76 points</p>
+                </div>
+                <div class="col s8 right"></div>
+                <span id="username">Loading..</span>
+                <br>
+                <span id="score">loading..</span>
+                <br>
+                <span id="High score">High score: </span>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="gamecontainer">
+        <div class="card-panel  white-text blue">
+            <div class="row">
+                <div class="col s12 center">
+                    Question
+                    <span id="questionNumber"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 left">
                     <form>
-                        <h5>Question {{1}}</h5>
                         <p class="flow-text">What is the first day of the month?</p>
                         <p>
                             <input class="with-gap" name="group1" type="radio" id="option1" />
@@ -88,12 +96,6 @@
                             <label for="option4">April</label>
                         </p>
                     </form>
-                    <br> Right/wrong answer. The correct answer is{{answer}}
-                    <div class="card-action center">
-                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
                 </div>
             </div>
         </div>
