@@ -1,0 +1,281 @@
+{
+    "questions": {
+        "science": {
+            "1": {
+                "question": "NaCl is the chemical formula of:",
+                "answer": "1",
+                "options": {
+                    "1": "Sodium chloride",
+                    "2": "Nitrous chloride",
+                    "3": "Ammonia",
+                    "4": "Nano calcium"
+                },
+                "points": 2
+            },
+            "2": {
+                "question": "Mycology is the study of:",
+                "answer": "3",
+                "options": {
+                    "1": "insects",
+                    "2": "Water bodies",
+                    "3": "Fungi",
+                    "4": "Volcanoes"
+                },
+                "points": 4
+            },
+            "3": {
+                "question": "What is the first element on the periodic table?",
+                "answer": "3",
+                "options": {
+                    "1": "Sodium",
+                    "2": "Oxygen",
+                    "3": "Hydrogen",
+                    "4": "Helium"
+                },
+                "points": 6
+            },
+            "4": {
+                "question": "What type of electrical charge does a neutron have?",
+                "answer": "2",
+                "options": {
+                    "1": "Negative",
+                    "2": "positive",
+                    "3": "No charge",
+                    "4": "Double negative"
+                },
+                "points": 8
+            },
+            "5": {
+                "question": "At what speed does light travel?",
+                "answer": "2",
+                "options": {
+                    "1": "299,792,458 metres per second",
+                    "2": "967,268,439 kilometres per second",
+                    "3": "3.14159265359 metres per second",
+                    "4": "3,598,689,696,123 kilometres per second"
+                },
+                "points": 10
+            },
+            "6": {
+                "question": "The male part of a flower is:",
+                "answer": "1",
+                "options": {
+                    "1": "Pistil",
+                    "2": "Stamen",
+                    "3": "Petal",
+                    "4": "Stigma"
+                },
+                "points": 2
+            },
+            "7": {
+                "question": "Air is mostly made up of::",
+                "answer": "2",
+                "options": {
+                    "1": "oxygen",
+                    "2": "Carbon dioxide",
+                    "3": "argon",
+                    "4": "nitrogen"
+                },
+                "points": 4
+            },
+            "8": {
+                "question": "Which of these is a type of bacteria:",
+                "answer": "2",
+                "options": {
+                    "1": "Bacillus",
+                    "2": "Argilite",
+                    "3": "Annona",
+                    "4": "Eridanus"
+                },
+                "points": 6
+            },
+            "9": {
+                "question": "Bronze is an alloy consisting of two or more metals. What are they?:",
+                "answer": "2",
+                "options": {
+                    "1": "Copper and zinc",
+                    "2": "Copper and tin",
+                    "3": "Copper and gold",
+                    "4": "Copper and lead"
+                },
+                "points": 8
+            },
+            "10": {
+                "question": "A galvanised metal has been covered with:",
+                "answer": "1",
+                "options": {
+                    "1": "Zinc",
+                    "2": "Iron",
+                    "3": "Oil",
+                    "4": "Calcium"
+                }
+
+            }
+        },
+        "general": {
+            "1": {
+                "question": "What year did Albert Einstein die?",
+                "answer": "4",
+                "options": {
+                    "1": "1954",
+                    "2": "1949",
+                    "3": "1960",
+                    "4": "1955"
+                },
+                "points": 2
+            },
+            "2": {
+                "question": "Which is the largest planet in the solar system?",
+                "answer": "1",
+                "options": {
+                    "1": "Jupiter",
+                    "2": "Neptune",
+                    "3": "Earth",
+                    "4": "Mars"
+                },
+                "points": 4
+            },
+            "3": {
+                "question": "What colour is Cerulean?",
+                "answer": "2",
+                "options": {
+                    "1": "Red",
+                    "2": "Blue",
+                    "3": "Yellow ",
+                    "4": "Green"
+                },
+                "points": 6
+            },
+            "4": {
+                "question": "Who invented Penicillin?",
+                "answer": "1",
+                "options": {
+                    "1": "Alexandra Flemming",
+                    "2": "Thomas Edison",
+                    "3": "Maria Curie ",
+                    "4": "George Orwell "
+                },
+                "points": 8
+            },
+            "5": {
+                "question": "How many men have walked on the moon?",
+                "answer": "3",
+                "options": {
+                    "1": "10",
+                    "2": "5",
+                    "3": " 12",
+                    "4": "9"
+                },
+                "points": 10
+            },
+            "6": {
+                "question": "What is the currency of Brazil??",
+                "answer": "3",
+                "options": {
+                    "1": "Dollar",
+                    "2": "The Bhat",
+                    "3": " Real",
+                    "4": "Krona"
+                },
+                "points": 10
+            }
+        },
+        "history": {
+            "one": {
+                "question": "Which one is a modern form of communtication",
+                "answer": "2",
+                "options": {
+                    "1": "Smoke signals",
+                    "2": "Whatsapp",
+                    "3": "Beating drums",
+                    "4": "Sending Messengers"
+                },
+                "points": 2
+            },
+            "two": {
+                "question": "Which one is a modern form of communtication",
+                "answer": "2",
+                "options": {
+                    "1": "Smoke signals",
+                    "2": "Whatsapp",
+                    "3": "Beating drums",
+                    "4": "Sending Messengers"
+                },
+                "points": 4
+            },
+            "three": {
+                "question": "Which one is a modern form of communtication",
+                "answer": "2",
+                "options": {
+                    "1": "Smoke signals",
+                    "2": "Whatsapp",
+                    "3": "Beating drums",
+                    "4": "Sending Messengers"
+                },
+                "points": 6
+            },
+            "four": {
+                "question": "Which one is a modern form of communtication",
+                "answer": "2",
+                "options": {
+                    "1": "Smoke signals",
+                    "2": "Whatsapp",
+                    "3": "Beating drums",
+                    "4": "Sending Messengers"
+                },
+                "points": 8
+            },
+            "five": {
+                "question": "Which one is a modern form of communtication",
+                "answer": "2",
+                "options": {
+                    "1": "Smoke signals",
+                    "2": "Whatsapp",
+                    "3": "Beating drums",
+                    "4": "Sending Messengers"
+                },
+                "points": 10
+            }
+        }
+    },
+
+    "players": {
+        "id1": {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id2": {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id3": {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id4": {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        },
+        "id5": {
+            "name": "",
+            "email": "",
+            "lastquestion": null,
+            "score": ""
+        }
+
+    },
+    "highscore": {
+        "id ": null,
+        "name": null,
+        "email": null,
+        "score": null
+    }
+}
