@@ -67,6 +67,29 @@
             </div>
         </div>
     </div>
+    <div class="container" id="category">
+        <div class="card-panel blue darken-3 white-text">
+            <div class="row center">
+                <span>Select a category to begin</span>
+            </div>
+            <div class="row center">
+                <div class="col s12 m6 l4">
+                    <a class="waves-effect pink waves-light btn-large" id="general" onclick="loadcategory(1)">General</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col s12 m6 l4">
+                    <a class="waves-effect pink waves-light btn-large" id="science" onclick="loadcategory(2);">Science</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col s12 m6 l4"></div>
+                <a class="waves-effect pink waves-light btn-large" id="history" onclick="loadcategory(3);">History</a>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
     <div class="container" id="gamecontainer">
         <div class="card-panel  white-text blue">
             <div class="row">
@@ -77,27 +100,33 @@
             </div>
             <div class="row">
                 <div class="col s12 left">
-                    <form>
-                        <p class="flow-text">What is the first day of the month?</p>
+                    <form pink>
+                        <p class="flow-text" id="questiontext"></p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="option1" />
-                            <label for="option1">January</label>
+                            <input class="with-gap pink" name="options" value="1" type="radio" id="option1" />
+                            <label for="option1" class="white-text" id="loption1"></label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="option2" />
-                            <label for="option2">February</label>
+                            <input class="with-gap pink" name="options" value="2" type="radio" id="option2" />
+                            <label for="option2" class="white-text" id="loption2"></label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="option3" />
-                            <label for="option3">March</label>
+                            <input class="with-gap pink" name="options" value="3" type="radio" id="option3" />
+                            <label for="option3" class="white-text" id="loption3"></label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="option4" />
-                            <label for="option4">April</label>
+                            <input class="with-gap pink" name="options" value="4" type="radio" id="option4" />
+                            <label for="option4" class="white-text" id="loption4"></label>
                         </p>
                     </form>
                 </div>
+                <div class="right">
+                    <a class="btn-floating waves-effect waves-light pink" id="btnsubmit" onclick="verifyanswer();">
+                        <i class="material-icons">done</i>
+                    </a>
+                </div>
             </div>
+
         </div>
     </div>
 </body>
