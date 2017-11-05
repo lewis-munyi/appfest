@@ -1,0 +1,130 @@
+{
+  "highscore" : {
+    "email" : 0,
+    "name" : 0,
+    "score" : 0
+  },
+  "players" : {
+    "PHWjczWXXWP0H5E6BYhqHirY8vm1" : {
+      "email" : "lewismunyi97@gmail.com",
+      "lastquestion" : 0,
+      "name" : "Lewis Munyi",
+      "score" : 0
+    }
+  },
+  "questions" : {
+    "general" : [ null, {
+      "answer" : "4",
+      "options" : [ null, "1954", "1949", "1960", "1955" ],
+      "points" : 2,
+      "question" : "What year did Albert Einstein die?"
+    }, {
+      "answer" : "1",
+      "options" : [ null, "Jupiter", "Neptune", "Earth", "Mars" ],
+      "points" : 4,
+      "question" : "Which is the largest planet in the solar system?"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "Red", "Blue", "Yellow ", "Green" ],
+      "points" : 6,
+      "question" : "What colour is Cerulean?"
+    }, {
+      "answer" : "1",
+      "options" : [ null, "Alexandra Flemming", "Thomas Edison", "Maria Curie ", "George Orwell " ],
+      "points" : 8,
+      "question" : "Who invented Penicillin?"
+    }, {
+      "answer" : "3",
+      "options" : [ null, "10", "5", " 12", "9" ],
+      "points" : 10,
+      "question" : "How many men have walked on the moon?"
+    }, {
+      "answer" : "3",
+      "options" : [ null, "Dollar", "The Bhat", " Real", "Krona" ],
+      "points" : 10,
+      "question" : "What is the currency of Brazil??"
+    } ],
+    "history" : {
+      "five" : {
+        "answer" : "2",
+        "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
+        "points" : 10,
+        "question" : "Which one is a modern form of communtication"
+      },
+      "four" : {
+        "answer" : "2",
+        "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
+        "points" : 8,
+        "question" : "Which one is a modern form of communtication"
+      },
+      "one" : {
+        "answer" : "2",
+        "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
+        "points" : 2,
+        "question" : "Which one is a modern form of communtication"
+      },
+      "three" : {
+        "answer" : "2",
+        "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
+        "points" : 6,
+        "question" : "Which one is a modern form of communtication"
+      },
+      "two" : {
+        "answer" : "2",
+        "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
+        "points" : 4,
+        "question" : "Which one is a modern form of communtication"
+      }
+    },
+    "science" : [ null, {
+      "answer" : "1",
+      "options" : [ null, "Sodium chloride", "Nitrous chloride", "Ammonia", "Nano calcium" ],
+      "points" : 2,
+      "question" : "NaCl is the chemical formula of:"
+    }, {
+      "answer" : "3",
+      "options" : [ null, "insects", "Water bodies", "Fungi", "Volcanoes" ],
+      "points" : 4,
+      "question" : "Mycology is the study of:"
+    }, {
+      "answer" : "3",
+      "options" : [ null, "Sodium", "Oxygen", "Hydrogen", "Helium" ],
+      "points" : 6,
+      "question" : "What is the first element on the periodic table?"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "Negative", "positive", "No charge", "Double negative" ],
+      "points" : 8,
+      "question" : "What type of electrical charge does a neutron have?"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "299,792,458 metres per second", "967,268,439 kilometres per second", "3.14159265359 metres per second", "3,598,689,696,123 kilometres per second" ],
+      "points" : 10,
+      "question" : "At what speed does light travel?"
+    }, {
+      "answer" : "1",
+      "options" : [ null, "Pistil", "Stamen", "Petal", "Stigma" ],
+      "points" : 2,
+      "question" : "The male part of a flower is:"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "oxygen", "Carbon dioxide", "argon", "nitrogen" ],
+      "points" : 4,
+      "question" : "Air is mostly made up of::"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "Bacillus", "Argilite", "Annona", "Eridanus" ],
+      "points" : 6,
+      "question" : "Which of these is a type of bacteria:"
+    }, {
+      "answer" : "2",
+      "options" : [ null, "Copper and zinc", "Copper and tin", "Copper and gold", "Copper and lead" ],
+      "points" : 8,
+      "question" : "Bronze is an alloy consisting of two or more metals. What are they?:"
+    }, {
+      "answer" : "1",
+      "options" : [ null, "Zinc", "Iron", "Oil", "Calcium" ],
+      "question" : "A galvanised metal has been covered with:"
+    } ]
+  }
+}
