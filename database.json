@@ -45,31 +45,31 @@
       "question" : "What is the currency of Brazil??"
     } ],
     "history" : {
-      "five" : {
+      "5" : {
         "answer" : "2",
         "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
         "points" : 10,
         "question" : "Which one is a modern form of communtication"
       },
-      "four" : {
+      "4" : {
         "answer" : "2",
         "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
         "points" : 8,
         "question" : "Which one is a modern form of communtication"
       },
-      "one" : {
+      "1" : {
         "answer" : "2",
         "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
         "points" : 2,
         "question" : "Which one is a modern form of communtication"
       },
-      "three" : {
+      "3" : {
         "answer" : "2",
         "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
         "points" : 6,
         "question" : "Which one is a modern form of communtication"
       },
-      "two" : {
+      "2" : {
         "answer" : "2",
         "options" : [ null, "Smoke signals", "Whatsapp", "Beating drums", "Sending Messengers" ],
         "points" : 4,
