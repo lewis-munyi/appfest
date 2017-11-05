@@ -1,6 +1,5 @@
 function signout() {
     firebase.auth().signOut().then(function() {
-        console.log("Signed out!");
         $("#gamecontainer").hide(); //Hide sign in container
         $("#signincontainer").show(); //Hide sign in container
         $("#usercontainer").hide(); //Hide user container
@@ -35,7 +34,7 @@ function checkifuserexists(uid, displayName, email) {
             var name = snapshot.val().name;
             var details = name + "<br> Score: " + score + "<br> Leaderboard highscore: ";
             $("#username").text(name); //Append username
-            $("#score").text("Your total points: " + score); //Append user points
+            $("#score").text("Your score: " + score); //Append user points
         }
     });
     var userId = firebase.auth().currentUser.uid;
@@ -44,10 +43,7 @@ function verifyanswer() {
     var answer = document.querySelector('input[name = "options"]:checked').value;
     if (answer == legitanswer) {
         Materialize.toast("Answer " + answer + " is correct!", 1000);
-        console.log("Question points:" + questionpoints);
-        console.log("score: " + score);
         newScore = score + questionpoints;
-        console.log("new score: " + newScore);
         if (questioncategory == "science") {
             var updates = {};
             updates['players/' + uid + "/lastquestion/" + questioncategory] = currentquestion;
@@ -86,14 +82,11 @@ function verifyanswer() {
 function playgame() {
     $("#category").hide();
     $("#gamecontainer").show();
-    console.log(questioncategory)
     var getlastquestion = firebase.database().ref('/players/' + uid + "/lastquestion/");
     getlastquestion.on('value', function(snapshot) {
         lastquestionsobject = snapshot.val();
-        console.log(JSON.stringify(lastquestionsobject));
         if (questioncategory == "science") {
             currentquestion = lastquestionsobject.science + 1;
-            console.log(currentquestion);
         } else if (questioncategory == "general") {
             currentquestion = lastquestionsobject.general + 1;
         } else if (questioncategory == "history") {
@@ -106,16 +99,13 @@ function playgame() {
         legitanswer = questions.answer;
         questionpoints = questions.points;
         $("#questiontext").text(questions.question);
-        console.log(questions.answer);
-        console.log(questions.options[4]);
         $("#loption1").text(questions.options[1]);
         $("#loption2").text(questions.options[2]);
         $("#loption3").text(questions.options[3]);
         $("#loption4").text(questions.options[4]);
-        console.log(questions.question);
     });// #26A69A teal pink #E91E63
 }
-}
+
 function loadcategory(category) {
     if (category == 1) {
         questioncategory = "general";
@@ -136,7 +126,7 @@ var uiConfig = {
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     ],
     tosUrl: '<your-tos-url>' // Terms Of Service url.
-};
+};  
 $("#signincontainer").hide(); //Hide sign in container
 $("#usercontainer").hide(); //Hide user container
 $("#category").hide();
@@ -186,9 +176,8 @@ listentoscore.on('child_changed', function(data) {
 var gethighscores = firebase.database().ref('/highscore');
 gethighscores.on('value', function(snapshot) {
     highscore = snapshot.val().score;
-    $('#highscore').text("Highest score: " + highscore);
+    $('#highscore').text("Leaderboard highscore: " + highscore);
 });
-
 $(document).ready(function() {
     initApp()
     $(".button-collapse").sideNav(); /*Materialize*/
