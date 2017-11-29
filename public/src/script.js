@@ -64,7 +64,7 @@ function verifyanswer() {
         var updates = {};
         updates['players/' + uid + '/score'] = newScore;
         firebase.database().ref().update(updates);
-        Materialize.toast($approval, 1000);
+        Materialize.toast($approval, 5000);
         playgame();
     } else {
         Materialize.toast("Incorrect! The correct answer is option " + answer, 1000);
